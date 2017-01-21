@@ -1,0 +1,28 @@
+﻿<!-- Begin page content -->
+<div class="container">
+    @{Html.RenderAction("HighlightEvents");}
+    <!-- Three columns of text below the carousel -->
+    <div class="" style="padding-left:30px; padding-right:30px;">
+        @{Html.RenderAction("GridEvents", new { periodo = 1, regiao = 2, categoria = 3 });}
+    </div>
+</div>
+
+@{Html.RenderAction("EventDetails");}
+
+@section Scripts {
+    <script type="text/javascript">
+        function showModal(name, dateFormated, description, price, dateHour, picture) {            
+            //you can do anything with data, or pass more data to this function. i set this data to modal header for example
+            //$("#myModal .modal-title").html(data)           
+
+            $("#myModal_Picture").attr("src", "/Festas/" + picture);
+            $("#myModal_Name").text(name);
+            $("#myModal_DateFormated").text(dateFormated);
+            $("#myModal_Description").text(description);
+            $("#myModal_Price").text(price);
+            $("#myModal_DateHour").text(dateHour);
+
+            $("#myModal").modal();
+        }
+    </script>
+}

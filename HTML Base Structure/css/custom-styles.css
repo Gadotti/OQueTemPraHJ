@@ -1,0 +1,397 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 265px;
+  background-color: #212632;
+  font-family: 'Roboto', sans-serif;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 245px;
+  background-color: #1A1E28;
+}
+
+.text-muted {
+    color: #343840;
+	text-align: center;
+}
+
+.footer-about-help {
+	color: white;
+	float:left;
+	padding-right: 20px;
+	width: 26.66%;
+	min-width:134px;
+}
+
+.footer-about-help  h1 {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-about-help  p {
+	font-size: 14px;
+	margin-bottom: 0px;
+	color:#C6C7C9;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 83px 0px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+.navbar {
+    min-height: 82px;
+ }
+ 
+.navbar > .container {
+	padding-right: 0;
+    padding-left: 15px;
+    margin-right: 0;
+    margin-left: 0;
+	width:100%
+}
+
+.navbar-default {
+    background-color: white;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: transparent;
+}
+
+.navbar-nav > li {
+    padding-top: 24px;
+	padding-bottom: 24px;
+	padding-right: 15px;
+  }
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 400px;
+  margin-bottom: 30px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  text-align: right;
+  bottom: 70px;
+  right: 5%;
+}
+
+.carousel-caption > h1 {
+	font-weight: bold;
+	font-size: 50px;
+	margin-bottom: 0px;
+}
+
+.carousel-caption > h2 {
+	margin-top: 0px;
+	margin-bottom: 25px;
+	color: #FCB150;
+}
+
+.carousel-caption > p {
+	max-width: 400px;
+	float: right;
+	font-size: 14px;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 400px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 400px;
+}
+
+.carousel-control {
+	width: 5%;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+/* Inicio - Grade para os quadros
+------------------------- */
+
+.grade {
+	float:left;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+.grade a:hover,
+.grade a:focus {
+	text-decoration:none;
+}
+
+/* Fim - Grade para os quadros
+------------------------- */
+
+/* Inicio - Quadros de festas
+------------------------- */
+.quadros {
+	height:337px;
+	border-radius: 6px;	
+	background-color: white;
+	color: #363B46;
+}
+.quadros h2 { /*Titulo da festa*/
+	margin-top:5px;
+	margin-bottom:0px;
+	margin-left:20px;
+	margin-right:20px;
+	font-size:18px;
+	font-weight: bold;
+}
+.quadros h4 { /*Data*/
+	margin-left:20px;
+	margin-right:20px;
+	margin-top:20px;
+}
+.quadros p { /*Local da festa*/
+	margin-top:0px;
+	margin-left:20px;
+	margin-right:20px;
+	margin-bottom:20px;
+	color: #8F9298;
+}
+.quadros h4 > span { /*dia da festa*/
+	background-color: #FCB150	
+}
+.quadroX1 { 
+	width:175px;
+	height:155px;	
+}
+.quadroX1 h4 { 
+	margin-top: 0px;
+	padding-top: 20px;
+}
+.quadroX1 h2 { 
+	margin-bottom: 10px;
+}
+.quadroX1 p { 
+	margin-bottom: 0px;
+}
+.quadroX2 { 
+	width:290px;	
+}
+.quadroX4 { 
+	width:600px;	
+}
+
+.btn-more {
+	font-size:32px;
+	float:right;
+	margin-top: -52px;
+	margin-right: 20px;
+}
+.img-type {
+	width:36px;
+	height:36px;
+	margin-top: -46px;
+	margin-left: 10px;
+	float:left;
+	position: absolute;
+}
+/* Fim - Quadros de festas
+------------------------- */
+
+/* Inicio - Quadro modal
+------------------------- */
+.modal-content > .close {
+	float:right;
+	margin-top:-380px;
+	margin-right:15px;
+	font-size:35px;
+}
+.modal-footer {
+    border: 0px;
+}
+.modal-body > h3 {	
+	margin-top:0px;
+}
+.span-custom {
+	background-color: #FCB150;
+}
+.modal-title {
+	float:left;
+	width: 70%;
+}
+.modal-title > h1 {	
+	font-weight:bold;
+}
+.modal-time-price {
+	position:absolute; 
+	bottom:0; 
+	right:0; 
+	padding:15px;
+}
+.modal-time-price > div > p {
+	margin-bottom:0;
+}
+.modal-time-price > div > h3 {
+	margin-top:0;
+	font-weight:bold;
+}
+.modal-time {
+	float:left;
+	padding-right:15px;
+	padding-bottom:45px;
+}
+.modal-price {
+	float:right;
+}
+.btn-add-event {
+	background-color:#212632;
+	border-color:#212632;
+}
+/* Fim - Quadro modal
+------------------------- */
+
+@media (max-width: 550px) {
+	.footer-about-help {
+		color:red;
+	}
+}
+
+@media (max-width: 665px) {
+	.modal-title {
+		width: 65%;
+	}
+}
+
+@media (max-width: 590px) {
+	.modal-title {
+		width: 100%;
+		float: none;
+	}
+	.modal-time-price {
+		position: initial;
+		padding-top: 0px;
+	}
+	.modal-time {
+		float: right;
+		padding-left: 0px;
+		padding-right: 45px;
+		padding-bottom: 30px;
+	}
+	.div-add-event {
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+		float: none;
+		padding: 15px;
+	}
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    float: right;
+    margin: 0;
+  }
+  .navbar-nav > li {
+    float: left;
+  }
+  
+  .container  {
+	  width: 100%;
+  }
+  
+  .featurette-heading {
+    font-size: 50px;
+  }
+  .modal-dialog {
+	width: auto;	
+  }
+}
+
+@media (min-width: 890px) {
+  .modal-dialog {
+    width: 850px;
+  } 
+}
+
+@media (min-width: 992px) {
+  .container  {
+	  width: 100%;
+  }
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+
+
+
+

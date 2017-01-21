@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OQTemPraHoje", "OQTemPraHoje_v1\OQTemPraHoje.csproj", "{AC426924-AACF-433E-9AD8-D9A31F9FF5CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{A8A5DC07-FCAD-41F9-82F9-7463D5FD86CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC426924-AACF-433E-9AD8-D9A31F9FF5CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC426924-AACF-433E-9AD8-D9A31F9FF5CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC426924-AACF-433E-9AD8-D9A31F9FF5CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC426924-AACF-433E-9AD8-D9A31F9FF5CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8A5DC07-FCAD-41F9-82F9-7463D5FD86CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8A5DC07-FCAD-41F9-82F9-7463D5FD86CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8A5DC07-FCAD-41F9-82F9-7463D5FD86CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8A5DC07-FCAD-41F9-82F9-7463D5FD86CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,71 @@
+﻿@model List<Data.Event>
+
+@for (var index = 0; index < Model.Count; index++)
+{
+    Data.Event item = Model[index];
+
+    var width = 0;
+    var height = 0;
+    var classDiv = "";    
+    var repeat = true;
+    var timesRepeat = 0;
+
+    switch (@item.Size)
+    {
+        case 1:
+            classDiv = "quadroX1";            
+            break;
+        case 2:
+            width = 290;
+            height = 230;
+            classDiv = "quadroX2";
+            break;
+        case 4:
+            width = 600;
+            height = 230;
+            classDiv = "quadroX3";
+            break;
+    }
+
+    <div class="grade">            
+        @{timesRepeat = 0;}
+        @{timesRepeat++;}          
+        @while (repeat)
+        {              
+            <a href="#" data-toggle="modal" onclick="showModal('@item.Name', '@item.DateFormated', '@item.Description', '@item.Price', '@item.Date.ToString("HH:mm")', '@item.Picture')">
+                <div class="quadros @(@classDiv) @(@timesRepeat > 1 ? "quadroX1Bot" : "")">
+                    @if (item.Size > 1)
+                    {
+                        <img class="img-rounded" src="~/Festas/@(@item.Picture)" alt="Generic placeholder image" width="@width" height="@height">
+                        <img class="img-type" src="~/imgs/guitar.png" alt="Categoria do Evento">
+                    }
+                    <h4><span class="label label-default">@item.DateFormated</span></h4>
+                    <h2>@item.Name</h2>
+                    <p>@item.Local</p>
+                    @if (item.Size > 1)
+                    {
+                        <span class="glyphicon glyphicon-plus-sign btn-more" aria-hidden="true"></span>
+                    }
+                    else
+                    {
+                        <p>@item.Date.ToString("HH:mm") - R$ @item.Price</p>
+                    }
+                </div>
+            </a>
+
+            repeat = false;
+            if (timesRepeat < 2 &&
+                ((index + 1) < Model.Count) &&
+                Model[index + 1].Size == 1 &&
+                item.Size == 1)
+            {
+                repeat = true;
+                index++;
+                item = Model[index];
+                timesRepeat++;
+            }
+        }
+    </div>
+
+}
+
